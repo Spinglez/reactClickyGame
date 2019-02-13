@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const Styles = {
   cardStyles: {
@@ -10,10 +10,11 @@ const Styles = {
   }
 }
 
-function Cards(props) {
+const Cards = props => {
+
     return (
-      <div className="card mt-3 mb-3 mx-auto rounded" style={Styles.cardStyles}>
-        <img style={Styles.imgStyles} src={props.image} className="card-img-top" alt={props.name}></img>
+      <div key={props.id} className="card hvr-grow mt-3 mb-3 mx-auto rounded border border-secondary shadow p-3 mb-5 bg-white rounded" style={Styles.cardStyles}>
+        <img onClick={() => props.selectImage(props.id)} style={Styles.imgStyles} src={props.image} className="card-img-top" alt={props.name}></img>
       </div>
     )}
 

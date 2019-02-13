@@ -15,8 +15,8 @@ const Header = props => {
       <nav style={Styles.headerStyles} className="navbar navbar-default navbar-fixed-top navbar-light bg-light">
         <div className="container">
           <span className="navbar-brand mb-0 h1">Clicky Game!</span>
-          <span> Click a image to get started! </span>
-          <span> Score Placeholder </span>
+          <span>{props.message}</span>
+          <span> Score: {props.score} | Highscore: {props.topScore} </span>
         </div>
       </nav>
     </>
