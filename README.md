@@ -1,8 +1,8 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Click Game!
 
-In the project directory, you can run:
+This project is a basic work in react state, it uses a single stateful component (body) to tract what cards you clicked as well as score and top score.
 
 ### `npm start`
 
