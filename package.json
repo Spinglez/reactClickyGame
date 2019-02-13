@@ -4,11 +4,15 @@
   "private": true,
   "dependencies": {
     "ajv": "^6.8.1",
+    "gh-pages": "^2.0.1",
     "react": "^16.8.1",
     "react-dom": "^16.8.1",
     "react-scripts": "2.1.3"
   },
+  "homepage": "https://spinglez.github.io/reactClickyGame",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
